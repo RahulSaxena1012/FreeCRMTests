@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 4, Errors: 0, Skipped: 6, Time elapsed: 238.081 sec <<< FAILURE!
+setUp(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 56.906 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'AUTOBOTS', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:606)
+	at com.crm.qa.util.TestUtil.switchToFrame(TestUtil.java:30)
+	at com.crm.qa.testcases.ContactsPageTest.setUp(ContactsPageTest.java:47)
+
+verifyHomePageTitleTest(com.crm.qa.testcases.HomePageTest)  Time elapsed: 0.07 sec  <<< FAILURE!
+java.lang.AssertionError: Home page title not matched expected [CRMPRO] but found [Free CRM software in the cloud powers sales and customer service]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.crm.qa.testcases.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:42)
+
+verifyUserNameTest(com.crm.qa.testcases.HomePageTest)  Time elapsed: 40.082 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'AUTOBOTS', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:606)
+	at com.crm.qa.util.TestUtil.switchToFrame(TestUtil.java:30)
+	at com.crm.qa.testcases.HomePageTest.verifyUserNameTest(HomePageTest.java:47)
+
+verifyContactsLinkTest(com.crm.qa.testcases.HomePageTest)  Time elapsed: 40.145 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'AUTOBOTS', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTargetLocator.frame(EventFiringWebDriver.java:606)
+	at com.crm.qa.util.TestUtil.switchToFrame(TestUtil.java:30)
+	at com.crm.qa.testcases.HomePageTest.verifyContactsLinkTest(HomePageTest.java:53)
+
